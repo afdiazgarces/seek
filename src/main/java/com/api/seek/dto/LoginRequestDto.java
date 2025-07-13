@@ -17,11 +17,11 @@ import lombok.ToString;
 public class LoginRequestDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Schema(description = "Nombre del usuario", example = "Luis")
+    @Schema(description = "Nombre del usuario", example = "admin")
     @NotBlank(message = "El nombre es obligatorio")
     private String userName;
 
-    @Schema(description = "password del cliente", example = "1233")
+    @Schema(description = "password del cliente", example = "admin123")
     @NotBlank(message = "El password es obligatorio")
     private String password;
 
